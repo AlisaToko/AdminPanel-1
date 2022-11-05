@@ -1,0 +1,38 @@
+﻿@model List<News>
+
+<h2>Все новости</h2>
+
+<table border="1" width="100%">
+    <thead>
+        <th colspan="4">Все новости</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Наименование</td>
+            <td>Описание новости</td>
+            <td>Действия</td>
+            <td>Дата</td>
+        </tr>
+        <tr>
+            @foreach (var item in Model){
+                <td>@item.Name</td>
+            }
+
+            @foreach (var item in Model){
+                <td>@item.Description</td>
+            }
+
+            <td>
+                <button>Удалить</button>
+                <button>Редактировать</button>
+            </td>
+
+            @foreach (var pic in Model){
+                <td>@pic.Pictures</td>
+            }
+
+            
+
+        </tr>
+    </tbody>
+</table>
