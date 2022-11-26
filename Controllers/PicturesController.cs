@@ -6,7 +6,13 @@ namespace AdminPanel.Controllers
 {
     public class PicturesController : Controller
     {
-        //empty 
+        public async Task<IActionResult> Index()
+        {
+
+            return View();
+        }
+
+        /*
         ApplicationContext _context;
         IWebHostEnvironment _environment;
         public PicturesController(ApplicationContext context, IWebHostEnvironment env)
@@ -48,9 +54,7 @@ namespace AdminPanel.Controllers
 
             return RedirectToAction("Index");
         }
-
-
-
+*/
 
 
     }
