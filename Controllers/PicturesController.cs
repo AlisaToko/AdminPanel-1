@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AdminPanel.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdminPanel.Controllers
 {
-    public class Pictures : Controller
+    public class PicturesController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
     }
 }

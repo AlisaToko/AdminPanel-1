@@ -1,4 +1,4 @@
-﻿@model List<News>
+﻿@*@model List<News>
 
     <h2>Все новости</h2>
     <table>
@@ -27,3 +27,35 @@
             flex-direction: column;
         }
     </style>
+*@
+@model List<News>
+
+<table class="table">
+ 
+        <tr>
+            <th>Наименование новости</th>
+            <th>Описание</th>
+            <th>Действия</th>
+            <th>Фотографии</th>
+        </tr>
+        <tr>
+
+            @foreach(var news in Model){
+            <td>@news.Name</td>
+            <td>@news.Description</td>
+            <td>
+                <button><a>Редактировать</a></button>
+                <form asp-action="Delete" asp-controller="News" asp-route-newsId="@news.Id" method="post">
+                    <input type="submit" value="Удалить">
+                </form>
+            </td>
+                @foreach (var pic in news.Pictures)
+                {
+@*                <td><a class="btn btn-sm">Редактировать</a></td>
+        *@
+                <td> <a class="btn btn-sm"> <img src="@pic.Path" width="300" height="200">  </a></td>
+                } 
+            }
+        </tr>
+
+</table>
