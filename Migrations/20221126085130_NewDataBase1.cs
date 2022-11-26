@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AdminPanel.Migrations
 {
-    public partial class updated : Migration
+    public partial class NewDataBase1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
