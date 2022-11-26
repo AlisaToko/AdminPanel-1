@@ -2,7 +2,7 @@
 
 namespace AdminPanel.Models
 {
-    public class Managers : IBilimkana
+    public class Managers : AllTableInt
     {
         public int Id { get; set; }
         public string Name { get; set; }

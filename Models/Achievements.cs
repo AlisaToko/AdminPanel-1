@@ -2,7 +2,7 @@
 
 namespace AdminPanel.Models
 {
-    public class Achievements : IBilimkana
+    public class Achievements : AllTableInt
     {
         public int Id { get; set; }
         public string Name { get; set; }
