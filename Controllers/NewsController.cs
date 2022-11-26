@@ -64,12 +64,11 @@ namespace AdminPanel.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int newsId)
         {
-            
             var news = await _context.News.FindAsync(newsId);
             _context.Remove(news);
             _context.SaveChanges();
-            return View();
-        }
+            return RedirectToAction("AllNews");
+        }   
 
 
 

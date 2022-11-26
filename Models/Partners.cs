@@ -2,7 +2,7 @@
 
 namespace AdminPanel.Models
 {
-    public class Partners : IBilimkana
+    public class Partners : AllTableInt
     {
         public int Id { get; set; }
         public string Name { get; set; }

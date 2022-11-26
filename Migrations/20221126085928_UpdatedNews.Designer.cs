@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdminPanel.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20221124105159_updated")]
-    partial class updated
+    [Migration("20221126085928_UpdatedNews")]
+    partial class UpdatedNews
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,11 +61,9 @@ namespace AdminPanel.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
