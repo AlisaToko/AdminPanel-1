@@ -6,6 +6,6 @@ namespace AdminPanel.Controllers
 {
     public class PicturesController : Controller
     {
-        
+        //empty
     }
 }
