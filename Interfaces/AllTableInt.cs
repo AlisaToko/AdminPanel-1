@@ -1,6 +1,6 @@
 ﻿namespace AdminPanel.Interfaces
 {
-    public interface IBilimkana
+    public interface AllTableInt
     {
         int Id { get; set; }
         string Name { get; set; }
