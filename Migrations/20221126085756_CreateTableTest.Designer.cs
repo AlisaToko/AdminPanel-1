@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdminPanel.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20221124105159_updated")]
-    partial class updated
+    [Migration("20221126085756_CreateTableTest")]
+    partial class CreateTableTest
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AdminPanel.Migrations
 {
-    public partial class updated : Migration
+    public partial class CreateTableTest : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
