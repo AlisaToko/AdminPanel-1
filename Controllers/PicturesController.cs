@@ -11,7 +11,7 @@ namespace AdminPanel.Controllers
 
             return View();
         }
-
+        
         /*
         ApplicationContext _context;
         IWebHostEnvironment _environment;

@@ -60,7 +60,8 @@ namespace AdminPanel.Controllers
             return RedirectToAction("Index");
         }
         
-
+            //yyy
+          //ооооооо
         [HttpPost]
         public async Task<IActionResult> Delete(int newsId)
         {
